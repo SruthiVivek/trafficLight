@@ -1,0 +1,47 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(16, 237, 200);
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+#traffic-light {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    width: 120px;
+    height: 360px;
+    background: linear-gradient(to bottom, #444, #222);
+    border-radius: 20px;
+    padding: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+}
+
+.light {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: auto;
+    background: radial-gradient(circle at 20% 20%, #333, #000);
+    opacity: 0.2;
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.red {
+    background: radial-gradient(circle at 20% 20%, #ff4d4d, #990000);
+}
+
+.yellow {
+    background: radial-gradient(circle at 20% 20%, #ffff99, #cccc00);
+}
+
+.green {
+    background: radial-gradient(circle at 20% 20%, #66ff66, #009900);
+}
+
+.active {
+    opacity: 1;
+    transform: scale(1.1);
+}
