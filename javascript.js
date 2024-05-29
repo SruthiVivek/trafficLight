@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const greenLight = document.getElementById('green');
 
     const lights = [redLight, yellowLight, greenLight];
-    const durations = [15000, 10000, 5000]; 
+    const durations = [5000, 2000, 3000]; 
 
     let currentLight = 0;
 
